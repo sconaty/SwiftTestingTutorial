@@ -1,6 +1,6 @@
 [submodule "BDDExample/Vendor/Quick"]
 	path = BDDExample/Vendor/Quick
-	url = git@github.com:Quick/Quick.git
+	url = https://github.com/Quick/Quick.git
 [submodule "BDDExample/Vendor/Nimble"]
 	path = BDDExample/Vendor/Nimble
-	url = git@github.com:Quick/Nimble.git
+	url = https://github.com/Quick/Nimble.git
