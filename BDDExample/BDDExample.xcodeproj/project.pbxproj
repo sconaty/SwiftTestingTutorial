@@ -10,9 +10,18 @@
 		CC5B037F1A06D9B300ABC8E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B037E1A06D9B300ABC8E7 /* AppDelegate.swift */; };
 		CC5B03811A06D9B300ABC8E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5B03801A06D9B300ABC8E7 /* Images.xcassets */; };
 		CC5B03841A06D9B300ABC8E7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC5B03821A06D9B300ABC8E7 /* MainMenu.xib */; };
-		CC5B03901A06D9B400ABC8E7 /* BDDExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B038F1A06D9B400ABC8E7 /* BDDExampleTests.swift */; };
 		CC5B03B81A06E94D00ABC8E7 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5B03A21A06E8BC00ABC8E7 /* Quick.framework */; };
 		CC5B03B91A06E95E00ABC8E7 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5B03B51A06E8E000ABC8E7 /* Nimble.framework */; };
+		CC5B03BC1A06EB2A00ABC8E7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03BB1A06EB2A00ABC8E7 /* SwiftyJSON.swift */; };
+		CC5B03BE1A06EBBC00ABC8E7 /* XCGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03BD1A06EBBC00ABC8E7 /* XCGLogger.swift */; };
+		CC5B03BF1A06EBBC00ABC8E7 /* XCGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03BD1A06EBBC00ABC8E7 /* XCGLogger.swift */; };
+		CC5B03C01A06EBBF00ABC8E7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03BB1A06EB2A00ABC8E7 /* SwiftyJSON.swift */; };
+		CC5B03C21A06EC3C00ABC8E7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03C11A06EC3C00ABC8E7 /* Theme.swift */; };
+		CC5B03C31A06EC3C00ABC8E7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03C11A06EC3C00ABC8E7 /* Theme.swift */; };
+		CC5B03C81A0FADC400ABC8E7 /* ValidTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = CC5B03C71A0FADC400ABC8E7 /* ValidTheme.json */; };
+		CC5B03E31A10193700ABC8E7 /* ThemeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03E21A10193700ABC8E7 /* ThemeSpec.swift */; };
+		CC5B03E61A101A8B00ABC8E7 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03E51A101A8B00ABC8E7 /* DictionaryExtensions.swift */; };
+		CC5B03E71A101A8B00ABC8E7 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03E51A101A8B00ABC8E7 /* DictionaryExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,9 +98,14 @@
 		CC5B03831A06D9B300ABC8E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		CC5B03891A06D9B400ABC8E7 /* BDDExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BDDExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5B038E1A06D9B400ABC8E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC5B038F1A06D9B400ABC8E7 /* BDDExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDDExampleTests.swift; sourceTree = "<group>"; };
 		CC5B03991A06E8BC00ABC8E7 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Vendor/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
 		CC5B03A91A06E8E000ABC8E7 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Vendor/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
+		CC5B03BB1A06EB2A00ABC8E7 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Libraries/SwiftyJSON.swift; sourceTree = "<group>"; };
+		CC5B03BD1A06EBBC00ABC8E7 /* XCGLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XCGLogger.swift; path = Libraries/XCGLogger.swift; sourceTree = "<group>"; };
+		CC5B03C11A06EC3C00ABC8E7 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		CC5B03C71A0FADC400ABC8E7 /* ValidTheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ValidTheme.json; path = "Sample Files/ValidTheme.json"; sourceTree = "<group>"; };
+		CC5B03E21A10193700ABC8E7 /* ThemeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeSpec.swift; sourceTree = "<group>"; };
+		CC5B03E51A101A8B00ABC8E7 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DictionaryExtensions.swift; path = Libraries/Extensions/DictionaryExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +149,8 @@
 		CC5B037B1A06D9B300ABC8E7 /* BDDExample */ = {
 			isa = PBXGroup;
 			children = (
+				CC5B03C11A06EC3C00ABC8E7 /* Theme.swift */,
+				CC5B03BA1A06E9CC00ABC8E7 /* Libraries */,
 				CC5B037E1A06D9B300ABC8E7 /* AppDelegate.swift */,
 				CC5B03801A06D9B300ABC8E7 /* Images.xcassets */,
 				CC5B03821A06D9B300ABC8E7 /* MainMenu.xib */,
@@ -154,9 +170,10 @@
 		CC5B038C1A06D9B400ABC8E7 /* BDDExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				CC5B03E21A10193700ABC8E7 /* ThemeSpec.swift */,
+				CC5B03C61A0FAD9500ABC8E7 /* Sample Files */,
 				CC5B03A91A06E8E000ABC8E7 /* Nimble.xcodeproj */,
 				CC5B03991A06E8BC00ABC8E7 /* Quick.xcodeproj */,
-				CC5B038F1A06D9B400ABC8E7 /* BDDExampleTests.swift */,
 				CC5B038D1A06D9B400ABC8E7 /* Supporting Files */,
 			);
 			path = BDDExampleTests;
@@ -190,6 +207,32 @@
 				CC5B03B71A06E8E000ABC8E7 /* Nimble-OSXTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CC5B03BA1A06E9CC00ABC8E7 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				CC5B03E41A101A4000ABC8E7 /* Extensions */,
+				CC5B03BD1A06EBBC00ABC8E7 /* XCGLogger.swift */,
+				CC5B03BB1A06EB2A00ABC8E7 /* SwiftyJSON.swift */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		CC5B03C61A0FAD9500ABC8E7 /* Sample Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC5B03C71A0FADC400ABC8E7 /* ValidTheme.json */,
+			);
+			name = "Sample Files";
+			sourceTree = "<group>";
+		};
+		CC5B03E41A101A4000ABC8E7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CC5B03E51A101A8B00ABC8E7 /* DictionaryExtensions.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +393,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC5B03C81A0FADC400ABC8E7 /* ValidTheme.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +405,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC5B037F1A06D9B300ABC8E7 /* AppDelegate.swift in Sources */,
+				CC5B03C21A06EC3C00ABC8E7 /* Theme.swift in Sources */,
+				CC5B03E61A101A8B00ABC8E7 /* DictionaryExtensions.swift in Sources */,
+				CC5B03BC1A06EB2A00ABC8E7 /* SwiftyJSON.swift in Sources */,
+				CC5B03BE1A06EBBC00ABC8E7 /* XCGLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +416,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC5B03901A06D9B400ABC8E7 /* BDDExampleTests.swift in Sources */,
+				CC5B03E31A10193700ABC8E7 /* ThemeSpec.swift in Sources */,
+				CC5B03C01A06EBBF00ABC8E7 /* SwiftyJSON.swift in Sources */,
+				CC5B03E71A101A8B00ABC8E7 /* DictionaryExtensions.swift in Sources */,
+				CC5B03C31A06EC3C00ABC8E7 /* Theme.swift in Sources */,
+				CC5B03BF1A06EBBC00ABC8E7 /* XCGLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +600,7 @@
 				CC5B03951A06D9B400ABC8E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC5B03961A06D9B400ABC8E7 /* Build configuration list for PBXNativeTarget "BDDExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +609,7 @@
 				CC5B03981A06D9B400ABC8E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

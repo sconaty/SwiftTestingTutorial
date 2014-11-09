@@ -1,0 +1,28 @@
+{
+    "backgroundColor": "#ffffff00",
+    
+    "defaults": {
+        "paragraph": {
+            "headIndent": 0,
+            "alignment": "left",
+            "firstLineHeadIndent": 12.3,
+            "firstLineHeadIndent": 0,
+            "lineBreakMode": "wordWrapping",
+            "writingDirection": "natural"
+        },
+        "font": {
+            "name": "Helvetica",
+            "size": 12,
+            "color": "#000000cc"
+        },
+        "boldFont": {
+            "color": "#000000ff"
+        }
+    },
+    
+    "h1": {
+        "font": {
+            "size": 24.5
+        }
+    }
+}
