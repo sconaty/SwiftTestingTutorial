@@ -18,4 +18,6 @@ If you ever want to update the submodules to latest version, enter the Quick dir
 ```sh
 cd BDDExample/Vendor/Quick
 git pull --rebase origin master
+cd ../Nimble
+git pull --rebase origin master
 ```
