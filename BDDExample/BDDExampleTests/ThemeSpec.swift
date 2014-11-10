@@ -59,11 +59,21 @@ class ThemeSpec: QuickSpec {
                 }
                 
                 describe("from invalid") {
+                    let defaultLogLevel = XCGLogger.defaultInstance().outputLogLevel
+                    
+                    beforeEach {
+                        // Temporarily disable logging to remove noise. For demonstration purposes
+                        // only... createThemeWithSilentLogging() closure is more readable
+                        XCGLogger.defaultInstance().outputLogLevel = XCGLogger.LogLevel.None
+                    }
+                    
+                    afterEach {
+                        XCGLogger.defaultInstance().outputLogLevel = defaultLogLevel
+                    }
+                    
                     it ("string should fail to load") {
                         let badJsonString = "badName:badValue"
-                        let optionalTheme = self.createThemeWithSilentLogging() {
-                            Theme.loadFromString(badJsonString)
-                        }
+                        let optionalTheme = Theme.loadFromString(badJsonString)
                         
                         expect(optionalTheme).to(beNil())
                     }
