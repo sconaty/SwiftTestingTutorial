@@ -1,6 +1,6 @@
 //
 //  ThemeSpec.swift
-//  Recall
+//  BDDExample
 //
 //  Created by Sheldon Conaty on 05/10/2014.
 //  Copyright (c) 2014 Sheldon Conaty. All rights reserved.
@@ -47,15 +47,13 @@ class ThemeSpec: QuickSpec {
                     }
                     
                     it("SwiftyJSON should load successfully") {
-                        let optionalTheme:Theme? = Theme.init(json: json)       // Forced optional http://stackoverflow.com/a/25294653
+                        let optionalTheme = Theme.init(json: json)
                         validateTheme(optionalTheme)
                     }
                     
                     it("file should load successfully") {
                         let filePath = NSBundle(forClass:ThemeSpec.self).pathForResource("ValidTheme", ofType: "json")!
-                        
-                        let optionalTheme:Theme? = Theme.loadFromFile(filePath) // Forced optional http://stackoverflow.com/a/25294653
-                        
+                        let optionalTheme = Theme.loadFromFile(filePath)
                         validateTheme(optionalTheme)
                     }
                 }
@@ -136,7 +134,7 @@ class ThemeSpec: QuickSpec {
                         it("should default to natural for \(typeDescription)") {
                             let theme = self.createThemeWithSilentLogging() {
                                 Theme.init(json: sampleJSON(["alignment": inputValue]))
-                                }!
+                            }!
                             
                             expect(theme.defaultParagraphStyle.alignment).to(equal(NSTextAlignment.NaturalTextAlignment))
                         }
@@ -201,7 +199,7 @@ class ThemeSpec: QuickSpec {
                         it("should default to wordWrapping for \(typeDescription)") {
                             let theme = self.createThemeWithSilentLogging() {
                                 Theme.init(json: sampleJSON(["lineBreakMode": inputValue]))
-                                }!
+                            }!
                             
                             expect(theme.defaultParagraphStyle.lineBreakMode).to(equal(NSLineBreakMode.ByWordWrapping))
                         }
@@ -346,7 +344,7 @@ class ThemeSpec: QuickSpec {
                         it("should default to natural for \(typeDescription)") {
                             let theme = self.createThemeWithSilentLogging() {
                                 Theme.init(json: sampleJSON(["writingDirection": inputValue]))
-                                }!
+                            }!
                             
                             expect(theme.defaultParagraphStyle.baseWritingDirection).to(equal(NSWritingDirection.Natural))
                         }
