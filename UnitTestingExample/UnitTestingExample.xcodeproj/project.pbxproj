@@ -11,6 +11,15 @@
 		CC5B03581A06D96900ABC8E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5B03571A06D96900ABC8E7 /* Images.xcassets */; };
 		CC5B035B1A06D96900ABC8E7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC5B03591A06D96900ABC8E7 /* MainMenu.xib */; };
 		CC5B03671A06D96900ABC8E7 /* UnitTestingExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03661A06D96900ABC8E7 /* UnitTestingExampleTests.swift */; };
+		CC5B03F31A1175F500ABC8E7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03F11A1175F500ABC8E7 /* Theme.swift */; };
+		CC5B03F81A11761000ABC8E7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03F61A11761000ABC8E7 /* SwiftyJSON.swift */; };
+		CC5B03F91A11761000ABC8E7 /* XCGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03F71A11761000ABC8E7 /* XCGLogger.swift */; };
+		CC5B03FC1A11762200ABC8E7 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03FB1A11762200ABC8E7 /* DictionaryExtensions.swift */; };
+		CC5B03FE1A11773300ABC8E7 /* ThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03FD1A11773300ABC8E7 /* ThemeTests.swift */; };
+		CC5B03FF1A11773800ABC8E7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03F61A11761000ABC8E7 /* SwiftyJSON.swift */; };
+		CC5B04001A11773B00ABC8E7 /* XCGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03F71A11761000ABC8E7 /* XCGLogger.swift */; };
+		CC5B04011A11773D00ABC8E7 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03FB1A11762200ABC8E7 /* DictionaryExtensions.swift */; };
+		CC5B04021A11774000ABC8E7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03F11A1175F500ABC8E7 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +41,11 @@
 		CC5B03601A06D96900ABC8E7 /* UnitTestingExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5B03651A06D96900ABC8E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC5B03661A06D96900ABC8E7 /* UnitTestingExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingExampleTests.swift; sourceTree = "<group>"; };
+		CC5B03F11A1175F500ABC8E7 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = UnitTestingExample/Theme.swift; sourceTree = "<group>"; };
+		CC5B03F61A11761000ABC8E7 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = UnitTestingExample/Libraries/SwiftyJSON.swift; sourceTree = "<group>"; };
+		CC5B03F71A11761000ABC8E7 /* XCGLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XCGLogger.swift; path = UnitTestingExample/Libraries/XCGLogger.swift; sourceTree = "<group>"; };
+		CC5B03FB1A11762200ABC8E7 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DictionaryExtensions.swift; path = UnitTestingExample/Libraries/Extensions/DictionaryExtensions.swift; sourceTree = "<group>"; };
+		CC5B03FD1A11773300ABC8E7 /* ThemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +69,8 @@
 		CC5B03471A06D96800ABC8E7 = {
 			isa = PBXGroup;
 			children = (
+				CC5B03F51A11760200ABC8E7 /* Libraries */,
+				CC5B03F11A1175F500ABC8E7 /* Theme.swift */,
 				CC5B03521A06D96900ABC8E7 /* UnitTestingExample */,
 				CC5B03631A06D96900ABC8E7 /* UnitTestingExampleTests */,
 				CC5B03511A06D96900ABC8E7 /* Products */,
@@ -94,6 +110,7 @@
 			children = (
 				CC5B03661A06D96900ABC8E7 /* UnitTestingExampleTests.swift */,
 				CC5B03641A06D96900ABC8E7 /* Supporting Files */,
+				CC5B03FD1A11773300ABC8E7 /* ThemeTests.swift */,
 			);
 			path = UnitTestingExampleTests;
 			sourceTree = "<group>";
@@ -104,6 +121,24 @@
 				CC5B03651A06D96900ABC8E7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC5B03F51A11760200ABC8E7 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				CC5B03FA1A11761500ABC8E7 /* Extensions */,
+				CC5B03F61A11761000ABC8E7 /* SwiftyJSON.swift */,
+				CC5B03F71A11761000ABC8E7 /* XCGLogger.swift */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		CC5B03FA1A11761500ABC8E7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CC5B03FB1A11762200ABC8E7 /* DictionaryExtensions.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC5B03FC1A11762200ABC8E7 /* DictionaryExtensions.swift in Sources */,
+				CC5B03F91A11761000ABC8E7 /* XCGLogger.swift in Sources */,
+				CC5B03F81A11761000ABC8E7 /* SwiftyJSON.swift in Sources */,
 				CC5B03561A06D96900ABC8E7 /* AppDelegate.swift in Sources */,
+				CC5B03F31A1175F500ABC8E7 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +252,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC5B04011A11773D00ABC8E7 /* DictionaryExtensions.swift in Sources */,
+				CC5B04001A11773B00ABC8E7 /* XCGLogger.swift in Sources */,
+				CC5B03FF1A11773800ABC8E7 /* SwiftyJSON.swift in Sources */,
+				CC5B04021A11774000ABC8E7 /* Theme.swift in Sources */,
 				CC5B03671A06D96900ABC8E7 /* UnitTestingExampleTests.swift in Sources */,
+				CC5B03FE1A11773300ABC8E7 /* ThemeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
