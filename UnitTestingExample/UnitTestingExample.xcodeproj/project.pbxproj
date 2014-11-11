@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		469837521A12C12700FA3005 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03F11A1175F500ABC8E7 /* Theme.swift */; };
 		CC5B03561A06D96900ABC8E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03551A06D96900ABC8E7 /* AppDelegate.swift */; };
 		CC5B03581A06D96900ABC8E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5B03571A06D96900ABC8E7 /* Images.xcassets */; };
 		CC5B035B1A06D96900ABC8E7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC5B03591A06D96900ABC8E7 /* MainMenu.xib */; };
@@ -19,7 +20,6 @@
 		CC5B03FF1A11773800ABC8E7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03F61A11761000ABC8E7 /* SwiftyJSON.swift */; };
 		CC5B04001A11773B00ABC8E7 /* XCGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03F71A11761000ABC8E7 /* XCGLogger.swift */; };
 		CC5B04011A11773D00ABC8E7 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03FB1A11762200ABC8E7 /* DictionaryExtensions.swift */; };
-		CC5B04021A11774000ABC8E7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B03F11A1175F500ABC8E7 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -255,7 +255,7 @@
 				CC5B04011A11773D00ABC8E7 /* DictionaryExtensions.swift in Sources */,
 				CC5B04001A11773B00ABC8E7 /* XCGLogger.swift in Sources */,
 				CC5B03FF1A11773800ABC8E7 /* SwiftyJSON.swift in Sources */,
-				CC5B04021A11774000ABC8E7 /* Theme.swift in Sources */,
+				469837521A12C12700FA3005 /* Theme.swift in Sources */,
 				CC5B03671A06D96900ABC8E7 /* UnitTestingExampleTests.swift in Sources */,
 				CC5B03FE1A11773300ABC8E7 /* ThemeTests.swift in Sources */,
 			);
@@ -437,6 +437,7 @@
 				CC5B036C1A06D96900ABC8E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC5B036D1A06D96900ABC8E7 /* Build configuration list for PBXNativeTarget "UnitTestingExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +446,7 @@
 				CC5B036F1A06D96900ABC8E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
