@@ -120,11 +120,6 @@ class Theme {
             paragraphStyle.headIndent = CGFloat(headIndent)
         }
         
-        let optionalTailIndent = json[Keys.TailIndent.rawValue].double
-        if let tailIndent = optionalTailIndent {
-            paragraphStyle.tailIndent = CGFloat(tailIndent)
-        }
-        
         let optionalLineBreakMode = json[Keys.LineBreakMode.rawValue].string
         if let lineBreakMode = optionalLineBreakMode {
             switch (lineBreakMode) {

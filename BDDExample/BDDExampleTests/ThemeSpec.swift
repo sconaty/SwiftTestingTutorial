@@ -87,7 +87,6 @@ class ThemeSpec: QuickSpec {
                         "alignment": "left",
                         "firstLineHeadIndent": 0,
                         "headIndent": 0,
-                        "tailIndent": 0,
                         "lineBreakMode": "wordWrapping",
                         "maximumLineHeight": 10,
                         "minimumLineHeight": 10,
@@ -105,7 +104,6 @@ class ThemeSpec: QuickSpec {
                                 "alignment": values["alignment"]!,
                                 "firstLineHeadIndent": values["firstLineHeadIndent"]!,
                                 "headIndent": values["headIndent"]!,
-                                "tailIndent": values["tailIndent"]!,
                                 "lineBreakMode": values["lineBreakMode"]!,
                                 "maximumLineHeight": values["maximumLineHeight"]!,
                                 "minimumLineHeight": values["minimumLineHeight"]!,
@@ -172,18 +170,6 @@ class ThemeSpec: QuickSpec {
                     it("should default to 0.0 for invalid type") {
                         let theme = Theme.init(json: sampleJSON(["headIndent": "badValue"]))!
                         expect(theme.defaultParagraphStyle.headIndent).to(equal(0))
-                    }
-                }
-                
-                describe("tail indent") {
-                    it("should support floats") {
-                        let theme = Theme.init(json: sampleJSON(["tailIndent": 0.25]))!
-                        expect(theme.defaultParagraphStyle.tailIndent).to(equal(0.25))
-                    }
-                    
-                    it("should default to 0.0 for invalid type") {
-                        let theme = Theme.init(json: sampleJSON(["tailIndent": "badValue"]))!
-                        expect(theme.defaultParagraphStyle.tailIndent).to(equal(0))
                     }
                 }
                 
