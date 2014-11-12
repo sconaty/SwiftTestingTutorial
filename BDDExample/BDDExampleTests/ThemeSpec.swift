@@ -93,8 +93,7 @@ class ThemeSpec: QuickSpec {
                         "lineHeightMultiple": 2,
                         "lineSpacing": 12,
                         "paragraphSpacing": 24,
-                        "paragraphSpacingBefore": 32,
-                        "writingDirection": "natural"
+                        "paragraphSpacingBefore": 32
                     ]
                     var values = defaultValues + userValues
                     
@@ -110,11 +109,10 @@ class ThemeSpec: QuickSpec {
                                 "lineHeightMultiple": values["lineHeightMultiple"]!,
                                 "lineSpacing": values["lineSpacing"]!,
                                 "paragraphSpacing": values["paragraphSpacing"]!,
-                                "paragraphSpacingBefore": values["paragraphSpacingBefore"]!,
-                                "writingDirection": values["writingDirection"]!,
+                                "paragraphSpacingBefore": values["paragraphSpacingBefore"]!
                             ]
                         ]
-                        ])
+                    ])
                 }
                 
                 describe("alignment") {
@@ -313,36 +311,6 @@ class ThemeSpec: QuickSpec {
                         it("should default to 0.0 for \(typeDescription)") {
                             let theme = Theme.init(json: sampleJSON(["paragraphSpacingBefore": inputValue]))!
                             expect(theme.defaultParagraphStyle.paragraphSpacingBefore).to(equal(0))
-                        }
-                    }
-                }
-                
-                describe("writing direction") {
-                    let validDirections = [
-                        "natural": NSWritingDirection.Natural,
-                        "leftToRight": NSWritingDirection.LeftToRight,
-                        "rightToLeft": NSWritingDirection.RightToLeft
-                    ]
-                    
-                    for (inputValue, expectedOutput) in validDirections {
-                        it("should support \(inputValue) direction") {
-                            let theme = Theme.init(json: sampleJSON(["writingDirection": inputValue]))!
-                            expect(theme.defaultParagraphStyle.baseWritingDirection).to(equal(expectedOutput))
-                        }
-                    }
-                    
-                    let invalidDirections = [
-                        "badValue": "invalid string",
-                        4.5: "invalid type"
-                    ]
-                    
-                    for (inputValue, typeDescription) in invalidDirections {
-                        it("should default to natural for \(typeDescription)") {
-                            let theme = self.createThemeWithSilentLogging() {
-                                Theme.init(json: sampleJSON(["writingDirection": inputValue]))
-                            }!
-                            
-                            expect(theme.defaultParagraphStyle.baseWritingDirection).to(equal(NSWritingDirection.Natural))
                         }
                     }
                 }

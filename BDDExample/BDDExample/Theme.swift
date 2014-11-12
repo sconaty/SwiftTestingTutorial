@@ -163,21 +163,6 @@ class Theme {
             paragraphStyle.paragraphSpacingBefore = max(CGFloat(paragraphSpacingBefore), 0.0)
         }
         
-        let optionalWritingDirection = json[Keys.WritingDirection.rawValue].string
-        if let writingDirection = optionalWritingDirection {
-            switch (writingDirection) {
-            case DirectionValues.Natural.rawValue:
-                paragraphStyle.baseWritingDirection = .Natural
-            case DirectionValues.LeftToRight.rawValue:
-                paragraphStyle.baseWritingDirection = .LeftToRight
-            case DirectionValues.RightToLeft.rawValue:
-                paragraphStyle.baseWritingDirection = .RightToLeft
-            default:
-                XCGLogger.error("Unable to set paragraph base writing direction to unknown value [\(writingDirection)], assuming [\(DirectionValues.Natural.rawValue)]")
-                paragraphStyle.baseWritingDirection = .Natural
-            }
-        }
-        
         return paragraphStyle
     }
 }
